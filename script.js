@@ -25,7 +25,7 @@ let hYear = hijriYearFormatter.format(currentHDate).replace(' AH', ''); // Just 
 res.addEventListener("click" , () => {
     let age = num.value;
     let mDate = mYear - age;
-    let hDate = (hYear-1) - age;
+    let hDate = (hYear) - age;
     
     this.mDate.innerHTML = `${mDate}م`;
     this.hDate.innerHTML = `${hDate}ھ`;
