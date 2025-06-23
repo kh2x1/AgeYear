@@ -8,6 +8,12 @@ let hDate = document.getElementById("hDate"); //h1
 
 let mDate = document.getElementById("mDate"); //h1
 
+let mode = document.getElementById("mode");
+
+mode.addEventListener("click" , () => {
+  document.body.classList.toggle("dark");
+})
+
 const currentMDate = new Date();
 let mYear = currentMDate.getFullYear();
 
@@ -29,6 +35,13 @@ res.addEventListener("click" , () => {
     
     this.mDate.innerHTML = `${mDate}م`;
     this.hDate.innerHTML = `${hDate}ھ`;
+
+    this.hDate.classList.add("slide1");
+    this.mDate.classList.add("slide2");
+
+    this.hDate.classList.remove("remove1");
+    this.mDate.classList.remove("remove2");
+    
 })
 
 
@@ -36,4 +49,12 @@ del.addEventListener("click" , () => {
     num.value = null;
     this.mDate.innerHTML = null;
     this.hDate.innerHTML = null;
+
+    this.hDate.classList.add("remove1");
+    this.mDate.classList.add("remove2");
+
+    this.hDate.classList.remove("slide1");
+    this.mDate.classList.remove("slide2");
 })
+
+

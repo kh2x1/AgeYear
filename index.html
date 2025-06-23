@@ -10,24 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="container">
-        <h2>حساب تاريخ الميلاد من العمر</h2>
-        <div class="inputs">
-            <input type="number" name="number" id="num">
-        </div>
 
-        <div>
+    
+    <div class="theme">
+        <button id="mode" class="mode">Dark</button>
+    </div>
+    
+    <main class="container">
+        <h2>حساب تاريخ الميلاد من العمر</h2>
+        <section class="inputs">
+            <input type="number" name="number" id="num">
+        </section>
+
+        <section>
             <button id="res">حساب</button>
             <button id="del">مسح</button>
-        </div>
+        </section>
 
-        <div class="outputs">
+        <section class="outputs">
             <h1 id="hDate"></h1>
             <h1 id="mDate"></h1>
-        </div>
-    </div>
-
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
